@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'app/content/style.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{% static 'app/scripts/javascript.js' %}"></script>
+    <title>Host Analytics</title>
+</head>
+<body>
+    <div class="top-navigation-bar">
+        <span class="logo">
+            <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.57935 12.5368C8.21716 8.02354 11.1652 5.8505 15.2597 5.18187V0C7.56203 0.501471 2.6486 4.84756 0.683228 10.6981L6.57935 12.5368Z" fill="#00C2FF"/>
+                <path d="M6.08868 14.0189L0.306973 12.2665C-1.56818 23.4179 5.30738 32.4983 16.5583 32.0204C27.8092 31.5425 32.8929 21.8249 31.872 14.0189C30.8511 6.21292 25.309 0.477917 16.7145 0V5.09778C22.6525 5.735 25.2797 10.6735 25.6215 14.0189C26.4028 21.6656 22.34 26.7633 16.0895 26.9226C8.74514 26.9226 5.46363 20.869 6.08868 14.0189Z" fill="white"/>
+                <path d="M12.1829 21.5062V9.71764H14.2143V14.4968C15.777 12.1072 19.5273 12.9037 19.5273 15.6119V21.5062H17.6521L17.4958 16.5678C17.3396 14.6561 15.1519 14.1782 14.2143 16.5678V21.5062H12.1829Z" fill="white"/>
+            </svg>
+            </span>
+        <span class="testtitle">CMR 2020 Hiring</span>
+        <span class="testdate"></span>
+    </div>
+
+    <p class="note">Note: please REGISTER below to get access to the test. Provide valid credentials.</p><br/>
+    {% block content %}{% endblock %}
+
+</body>
+</html>
