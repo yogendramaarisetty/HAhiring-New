@@ -10,6 +10,9 @@ from .forms import SignUpForm
 from .tokens import account_activation_token
 import smtplib
 
+def test(request):
+    return render(request,"app/testpage.html")
+
 
 def register1(request):
     """Renders the Registration page."""

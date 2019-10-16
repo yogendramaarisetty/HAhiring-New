@@ -13,6 +13,7 @@ width: 1369px;
 height: 48px;
 left: 0px;
 top: 0px;
+z-index: 1;
 
 background: linear-gradient(180deg, #383535 0%, rgba(111, 111, 111, 0) 100%), #141313;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -171,4 +172,44 @@ border-radius: 7px;
 .register-btn:hover{
     background: rgb(5, 185, 44);
 }
+.left-pane{
+position: absolute;
+width: 37px;
+height: 550px;
+left: -1px;
+top: 60px;
+position: fixed;
+z-index: 1;
+}
+button.questionnav-btn{
+  
+width: 36.7px;
+height: 110px;
 
+
+background: #E1E1E1;
+box-shadow: inset 5px 4px 15px rgba(0, 0, 0, 0.25);
+}
+button.questionnav-btn:hover{
+    background: rgb(250, 250, 250);
+
+}
+.question_area{
+    position: absolute;
+width: 557px;
+height: 570px;
+left: 42px;
+top: 55px;
+overflow-y: scroll;
+background: #FFFFFF;
+}
+.compiler_area{
+    position: absolute;
+width: 762px;
+height: 570px;
+left: 599px;
+top: 55px;
+overflow-y: scroll;
+
+background: rgb(255, 255, 255);
+}
