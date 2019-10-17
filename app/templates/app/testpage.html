@@ -1,16 +1,28 @@
-{% extends "app/layout.html" %}{% block content %}{% url 'testpage' as my_view %} 
-<div class="left-pane" align="left">
-    <button class="questionnav-btn" id="q1_btn">1</button>
-    <button class="questionnav-btn" id="q1_btn">2</button>
-    <button class="questionnav-btn" id="q1_btn">3</button>
-    <button class="questionnav-btn" id="q1_btn">4</button>
-    <button class="questionnav-btn" id="q1_btn">5</button>
-</div >
+{% extends "app/layout.html" %}{% block content %}{% url 'testpage' as my_view %}
+<body>
+<div class="full-screen-sidebar" style="transform: translate3d(0px, 0px, 0px);">
+    <div class="extra-sidebar-wrapper">
+        <div class="sidebar-container">
+            <ul class="sidebar-list">
+                <li class="tab-item" id="q1_btn"><a class="tab-item-color">Question 1</a></li>
+                <li class="tab-item" id="q2_btn"><a class="tab-item-color">Question 2</a></li>
+                <li class="tab-item" id="q3_btn"><a class="tab-item-color">Question 3</a></li>
+                <li class="tab-item" id="q4_btn"><a class="tab-item-color">Question 4</a></li>
+                <li class="tab-item" id="q5_btn"><a class="tab-item-color">Question 5</a></li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
 <div class="question_area">
 </div>
-<div class="compiler_area">
-
+<div class="compiler_area" align="middle">
+    <div id='code_header' class='code_header'>
+        <h5 align="left" style="vertical-align: middle;">CODE EDITOR</h5>
+    </div>
+    <hr class="divider">
+    <div id='code_editor' class="code_editor" name="code editor"></div>
 </div>
+</div>
+</body>
 {% endblock  %}
-
-
